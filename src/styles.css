@@ -47,4 +47,5 @@ button {
 .github-link {
   display: block;
   margin: 0 auto;
+  font-size: bold;
 }
