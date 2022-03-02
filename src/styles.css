@@ -44,8 +44,8 @@ button {
   border-radius: 5%;
 }
 
-.github-link {
+.github {
   display: block;
   margin: 0 auto;
-  font-size: bold;
+  font-weight: bold;
 }
