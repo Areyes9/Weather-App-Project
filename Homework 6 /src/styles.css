@@ -1,0 +1,45 @@
+.weather-app {
+  border: 1px solid grey;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 640px;
+  border-radius: 10px;
+}
+.city,
+.temp {
+  text-align: center;
+}
+
+.city {
+  font-size: 37px;
+}
+.temp {
+  left: 10%;
+}
+
+.date {
+  font-size: 18px;
+  text-align: center;
+  padding: none;
+  margin: none;
+}
+
+#farenheit-link,
+#celsius-link,
+#temp-bar {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+button {
+  background: green;
+  color: white;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+.search-button {
+  background: #0a5ed7;
+  color: white;
+  border-radius: 5%;
+}
