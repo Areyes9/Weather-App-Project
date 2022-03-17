@@ -25,6 +25,8 @@ function showTemperature(response) {
   );
   let description = document.querySelector("#temp-description");
   description.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
 }
 
 function search(event) {
