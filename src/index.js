@@ -27,6 +27,11 @@ function showTemperature(response) {
   description.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    "http://openweathermap.org/img/wn/10d@2x.png"
+  );
 }
 
 function search(event) {
