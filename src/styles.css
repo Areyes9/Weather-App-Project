@@ -18,10 +18,20 @@
 }
 
 .date {
+  list-style: none;
   font-size: 18px;
   text-align: center;
   padding: none;
   margin: none;
+}
+
+#temp-description {
+  list-style: none;
+  display: block;
+  font-size: 18px;
+  font-weight: thin;
+  margin-top: -8px;
+  text-transform: capitalize;
 }
 
 #farenheit-link,
