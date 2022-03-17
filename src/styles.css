@@ -17,6 +17,10 @@
   left: 10%;
 }
 
+ul {
+  list-style: none;
+}
+
 .date {
   list-style: none;
   font-size: 18px;
