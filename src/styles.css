@@ -60,6 +60,10 @@ ul {
   margin-left: -7px;
 }
 
+#icon {
+  font-size: 20px;
+}
+
 .weather-extras {
   list-style: none;
   display: block;
