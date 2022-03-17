@@ -61,7 +61,7 @@ ul {
 }
 
 #icon {
-  font-size: 20px;
+  size: smaller;
 }
 
 .weather-extras {
