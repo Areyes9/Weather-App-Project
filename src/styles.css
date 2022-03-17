@@ -27,7 +27,7 @@ ul {
 .date {
   list-style: none;
   font-size: 18px;
-  font-weight: 100;
+
   text-align: center;
   padding: none;
   margin: none;
@@ -37,7 +37,7 @@ ul {
   list-style: none;
   display: block;
   font-size: 18px;
-  font-weight: 100;
+
   margin-top: -8px;
   text-transform: capitalize;
 }
