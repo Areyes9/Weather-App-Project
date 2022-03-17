@@ -7,7 +7,8 @@
   border-radius: 5px;
 }
 .city,
-.temp #temperature {
+#temperature,
+#weather-extras {
   text-align: center;
   line-height: 29px;
 }
@@ -44,7 +45,7 @@ ul {
   display: block;
   font-size: 18px;
   font-weight: thin;
-  margin-top: -6px;
+  margin-top: -8px;
   text-transform: capitalize;
 }
 
@@ -63,7 +64,7 @@ ul {
   list-style: none;
   display: block;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 200;
 }
 
 button {
