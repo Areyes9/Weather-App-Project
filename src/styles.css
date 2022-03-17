@@ -30,7 +30,7 @@ ul {
   font-weight: thin;
   text-align: center;
   padding: none;
-  margin-top: -8px;
+  margin-top: -20px;
 }
 
 #temp-description {
@@ -38,7 +38,7 @@ ul {
   display: block;
   font-size: 18px;
   font-weight: thin;
-  margin-top: -8px;
+  margin-top: -6px;
   text-transform: capitalize;
 }
 
