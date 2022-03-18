@@ -63,6 +63,7 @@ ul {
 #icon {
   max-width: 50px;
   max-height: 50px;
+  line-height: -2px;
 }
 
 .weather-extras {
