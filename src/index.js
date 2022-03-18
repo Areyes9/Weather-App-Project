@@ -30,7 +30,7 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    "http://openweathermap.org/img/wn/10d@2x.png"
+    `http://openweathermap.org/img/wn/10d@2x.png`
   );
 }
 
