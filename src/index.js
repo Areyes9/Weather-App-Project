@@ -30,7 +30,7 @@ let months = [
 ];
 let month = month[now.getMonth()];
 let time = document.querySelector("#date");
-time.innerHTML = `${day} ${date}, ${hour}:${minutes}`;
+time.innerHTML = `${day} ${month} ${date}, ${hour}:${minutes}`;
 
 // City
 function showTemperature(response) {
