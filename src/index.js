@@ -4,6 +4,7 @@ let now = new Date();
 let date = now.getDate();
 let minutes = now.getMinutes();
 let hour = now.getHours();
+let hour = ((hour + 11) % 12) + 1;
 let days = [
   "Sunday",
   "Monday",
@@ -15,18 +16,18 @@ let days = [
 ];
 let day = days[now.getDay()];
 let months = [
-  "January",
-  "February",
-  "March",
-  "April",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
   "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 let month = months[now.getMonth()];
 let time = document.querySelector("#date");
