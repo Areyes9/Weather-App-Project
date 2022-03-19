@@ -14,8 +14,23 @@ let days = [
   "Saturday",
 ];
 let day = days[now.getDay()];
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let month = month[now.getMonth()];
 let time = document.querySelector("#date");
-time.innerHTML = `${day} ${date}, ${hour}:${minutes}`;
+time.innerHTML = `${day} ${month} ${date}, ${hour}:${minutes}`;
 
 // City
 function showTemperature(response) {
