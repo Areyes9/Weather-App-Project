@@ -4,8 +4,6 @@ let now = new Date();
 let date = now.getDate();
 let minutes = now.getMinutes();
 let hour = now.getHours();
-let hours = hour;
-hours = ((hours + 11) % 12) + 1;
 let days = [
   "Sunday",
   "Monday",
