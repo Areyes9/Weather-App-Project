@@ -97,4 +97,6 @@ button {
   display: block;
   margin: 0 auto;
   text-align: center;
+  font-size: 10px;
+  font-weight: 100;
 }
