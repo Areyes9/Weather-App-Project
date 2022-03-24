@@ -38,7 +38,7 @@ function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
+  console.log(response);
   let description = document.querySelector("#temp-description");
   description.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");

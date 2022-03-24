@@ -3,7 +3,7 @@
   border: 1px solid grey;
   padding: 20px;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 650px;
   border-radius: 5px;
 }
 .city,
@@ -14,14 +14,14 @@
 }
 
 .city {
-  font-size: 37px;
+  font-size: 45px;
   font-weight: 200;
   text-align: left;
   margin-bottom: 0px;
 }
 .temp {
   left: 10%;
-  font-weight: 300;
+  font-weight: 250;
 }
 
 ul {
@@ -61,8 +61,8 @@ ul {
 }
 
 #icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 30px;
+  max-height: 30px;
   position: relative;
 }
 
