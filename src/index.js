@@ -42,6 +42,8 @@ function showTemperature(response) {
   let description = document.querySelector("#temp-description");
   description.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = response.data.wind.speed;
   humidityElement.innerHTML = response.data.main.humidity;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
