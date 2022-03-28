@@ -56,33 +56,34 @@ function search(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showTemperature);
 }
+
+//Farenheit to Celsius
+//function convertToCelsius(event) {
+//event.preventDefault();
+
+//let temperatureElement = document.querySelector("#temperature");
+//let temperature = temperatureElement.innerHTML;
+//temperature = Number(temperature);
+//temperatureElement.innerHTML = 66;
+//}
+
+//function convertToFahrenheit(event) {
+//event.preventDefault();
+//let temperatureElement = document.querySelector("#temperature");
+//temperatureElement.innerHTML = 19;
+//let fahrenheitTemperature = (14 * 9) / 5 + 32;
+//let temperatureElement = document.querySelector("#temperature");
+//temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+//}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-//Farenheit to Celsius
-function convertToCelsius(event) {
-  event.preventDefault();
+//let celsiusLink = document.querySelector("#celsius-link");
+//celsiusLink.addEventListener("click", convertToCelsius);
 
-  let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
-  temperature = Number(temperature);
-  temperatureElement.innerHTML = 66;
-}
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  //let temperatureElement = document.querySelector("#temperature");
-  //temperatureElement.innerHTML = 19;
-  let fahrenheitTemperature = (14 * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = fahrenheitTemperature;
-}
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
-
-let fahrenheitLink = document.querySelector("#f-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
+//et fahrenheitLink = document.querySelector("#f-link");
+//fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 //Search Engine HM 5
 let apiKey = "147c7ccb0d8865155667a7334b1e39df";
