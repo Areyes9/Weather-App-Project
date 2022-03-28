@@ -71,15 +71,18 @@ function convertToCelsius(event) {
 
 function convertToFarenheit(event) {
   event.preventDefault();
+  //let temperatureElement = document.querySelector("#temperature");
+  //temperatureElement.innerHTML = 19;
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
+  temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-let farenheitLink = document.querySelector("#f-link");
-farenheitLink.addEventListener("click", convertToFarenheit);
+let fahrenheitLink = document.querySelector("#f-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 //Search Engine HM 5
 let apiKey = "147c7ccb0d8865155667a7334b1e39df";
