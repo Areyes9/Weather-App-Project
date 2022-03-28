@@ -47,6 +47,8 @@ function showTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
+
+  fahrenheitTemperature = response.data.main.temp;
 }
 
 function search(event) {
@@ -58,14 +60,15 @@ function search(event) {
 }
 
 //Farenheit to Celsius
-//function convertToCelsius(event) {
-//event.preventDefault();
+function convertToCelsius(event) {
+  event.preventDefault();
 
-//let temperatureElement = document.querySelector("#temperature");
-//let temperature = temperatureElement.innerHTML;
-//temperature = Number(temperature);
-//temperatureElement.innerHTML = 66;
-//}
+  let temperatureElement = document.querySelector("#temperature");
+  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  //temperature = Number(temperature);
+  //temperatureElement.innerHTML = 66;
+}
 
 //function convertToFahrenheit(event) {
 //event.preventDefault();
@@ -76,14 +79,18 @@ function search(event) {
 //temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 //}
 
+let fahrenheitTemperature = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-//let celsiusLink = document.querySelector("#celsius-link");
-//celsiusLink.addEventListener("click", convertToCelsius);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
 
-//et fahrenheitLink = document.querySelector("#f-link");
+//let fahrenheitLink = document.querySelector("#f-link");
 //fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+search("Arlington");
 
 //Search Engine HM 5
 let apiKey = "147c7ccb0d8865155667a7334b1e39df";
