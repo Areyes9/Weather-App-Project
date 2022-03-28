@@ -55,16 +55,23 @@
         </h1>
         <h2></h2>
         <form id="search-form">
-          <input
-            type="text"
-            placeholder="Enter a city"
-            autofocus="on"
-            id="search-text-input"
-          />
-          <input type="submit" value="Search" class="btn btn-primary" />
-          <button class="btn btn-success" id="current-location-button">
-            Current Location
-          </button>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                placeholder="Enter a city"
+                class="form-control"
+                autofocus="on"
+                id="search-text-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary" />
+              <button class="btn btn-success" id="current-location-button">
+                Current Location
+              </button>
+            </div>
+          </div>
         </form>
 
         <div class="card-body">
