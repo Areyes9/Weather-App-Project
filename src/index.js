@@ -66,18 +66,16 @@ function convertToCelsius(event) {
   let temperatureElement = document.querySelector("#temperature");
   let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  //temperature = Number(temperature);
-  //temperatureElement.innerHTML = 66;
 }
 
-//function convertToFahrenheit(event) {
-//event.preventDefault();
-//let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = 19;
-//let fahrenheitTemperature = (14 * 9) / 5 + 32;
-//let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-//}
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  //let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  //let temperatureElement = document.querySelector("#temperature");
+  //temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
 
 let fahrenheitTemperature = null;
 
@@ -87,8 +85,8 @@ form.addEventListener("submit", search);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-//let fahrenheitLink = document.querySelector("#f-link");
-//fahrenheitLink.addEventListener("click", convertToFahrenheit);
+let fahrenheitLink = document.querySelector("#f-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 search("Arlington");
 
