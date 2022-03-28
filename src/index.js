@@ -71,7 +71,7 @@ function convertToCelsius(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature)``;
   //let fahrenheitTemperature = (14 * 9) / 5 + 32;
   //let temperatureElement = document.querySelector("#temperature");
   //temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
