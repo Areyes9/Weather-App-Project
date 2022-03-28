@@ -78,7 +78,7 @@ function convertToFarenheit(event) {
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-let farenheitLink = document.querySelector("#farenheit-link");
+let farenheitLink = document.querySelector("#f-link");
 farenheitLink.addEventListener("click", convertToFarenheit);
 
 //Search Engine HM 5
