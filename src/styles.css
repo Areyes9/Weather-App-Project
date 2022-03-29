@@ -26,11 +26,6 @@
   font-size: 50;
 }
 
-.temp {
-  left: 10%;
-  font-weight: 250;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -68,7 +63,7 @@ ul {
 
 #celsius-link {
   position: relative;
-  margin-left: -2px;
+  margin-left: -5px;
 }
 
 #icon {
@@ -89,8 +84,8 @@ ul {
 .weather-extras {
   list-style: none;
   display: block;
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 220;
 }
 
 button {
