@@ -20,7 +20,7 @@
   margin-bottom: 0px;
 }
 
-#temperature {
+#temperature span {
   left: 10%;
   font-weight: 200;
   font-size: 50;
@@ -57,9 +57,9 @@ ul {
   position: relative;
   top: -12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   padding: none;
-  font-weight: 200;
+  font-weight: 250;
 }
 
 #celsius-link {
