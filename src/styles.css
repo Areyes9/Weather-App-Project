@@ -59,6 +59,7 @@ ul {
   text-decoration: none;
   font-size: 18px;
   padding: none;
+  font-weight: 200;
 }
 
 #celsius-link {
