@@ -53,8 +53,13 @@ function showTemperature(response) {
 
 function search(event) {
   event.preventDefault();
-  let apiKey = "147c7ccb0d8865155667a7334b1e39df";
   let city = document.querySelector("#search-text-input").value;
+
+  searchCity(city);
+}
+
+function searchCity(city) {
+  let apiKey = "147c7ccb0d8865155667a7334b1e39df";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showTemperature);
 }
@@ -62,7 +67,7 @@ function search(event) {
 //Farenheit to Celsius
 function convertToCelsius(event) {
   event.preventDefault();
-  fLink.classList.remove("active");
+  fahrenheitLink.classList.remove("active");
   celsiusLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
@@ -72,9 +77,9 @@ function convertToCelsius(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   celsiusLink.classList.remove("active");
-  fLink.classList.add("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature)``;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   //let fahrenheitTemperature = (14 * 9) / 5 + 32;
   //let temperatureElement = document.querySelector("#temperature");
   //temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
@@ -91,7 +96,7 @@ celsiusLink.addEventListener("click", convertToCelsius);
 let fahrenheitLink = document.querySelector("#f-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-search("Arlington");
+searchCity("Arlington");
 
 //Search Engine HM 5
 let apiKey = "147c7ccb0d8865155667a7334b1e39df";
