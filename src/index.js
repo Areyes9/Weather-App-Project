@@ -44,7 +44,7 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let precipitationElement = document.querySelector("#precipitation");
-  precipitationElement.innerHTML = response.data.main.precipitation;
+  precipitationElement.innerHTML = response.data.rain;
   windElement.innerHTML = response.data.wind.speed;
   humidityElement.innerHTML = response.data.main.humidity;
   let iconElement = document.querySelector("#icon");
