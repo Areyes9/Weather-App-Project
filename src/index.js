@@ -43,8 +43,8 @@ function showTemperature(response) {
   description.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-  let precipiationElement = document.querySelector("#precipiation");
-  precipiationElement.innerHTML = response.data.main.precipiation;
+  let precipitationElement = document.querySelector("#precipitation");
+  precipitationElement.innerHTML = response.data.main.precipitation;
   windElement.innerHTML = response.data.wind.speed;
   humidityElement.innerHTML = response.data.main.humidity;
   let iconElement = document.querySelector("#icon");
