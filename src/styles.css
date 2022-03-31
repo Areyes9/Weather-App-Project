@@ -10,7 +10,6 @@
 #temperature,
 #weather-extras {
   text-align: center;
-  line-height: 29px;
 }
 
 .city {
@@ -18,13 +17,14 @@
   font-weight: 200;
   text-align: left;
   margin-bottom: 0px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 #temperature {
   left: 10%;
   font-weight: 200;
   font-size: 100;
+  position: relative;
 }
 
 ul {
@@ -71,7 +71,7 @@ ul {
 #icon {
   max-width: 60px;
   max-height: 60px;
-  padding-top: -2px;
+  padding-top: 2px;
 }
 
 .weather-temperature .active {
