@@ -69,9 +69,10 @@ ul {
 }
 
 #icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 60px;
+  max-height: 60px;
   position: relative;
+  padding-top: -2px;
 }
 
 .weather-temperature .active {
