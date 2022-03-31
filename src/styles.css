@@ -50,7 +50,7 @@ ul {
   display: block;
   font-size: 18px;
   font-weight: thin;
-  margin-top: -8px;
+  margin-top: -5px;
   text-transform: capitalize;
 }
 
@@ -90,7 +90,7 @@ ul {
   list-style: none;
   display: block;
   font-size: 18px;
-  font-weight: 220;
+  font-weight: 200;
 }
 
 button {
