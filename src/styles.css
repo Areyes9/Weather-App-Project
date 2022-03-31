@@ -10,6 +10,7 @@
 #temperature,
 #weather-extras {
   text-align: center;
+  line-height: normal;
 }
 
 .city {
@@ -72,6 +73,7 @@ ul {
   max-width: 60px;
   max-height: 60px;
   padding-top: 2px;
+  position: relative;
 }
 
 .weather-temperature .active {
