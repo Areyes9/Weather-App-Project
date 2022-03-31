@@ -22,9 +22,9 @@
 
 #temperature {
   left: 10%;
+  color: green;
   font-weight: 200;
   font-size: 100;
-  position: relative;
 }
 
 ul {
