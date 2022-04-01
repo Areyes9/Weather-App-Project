@@ -46,9 +46,9 @@
                 >
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <ul class="weather-extras">
-                <li>Precipitation: <span id="precipitation"></span>mm</li>
+                <li>Rain: <span id="Rain"></span>mm</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span>mph</li>
               </ul>
@@ -85,9 +85,22 @@
 
         <div class="card-body">
           <div class="row">
-            <div class="col-4">Thu 3RD</div>
-            <div class="col-4">☀️</div>
-            <div class="col-4">49°F</div>
+            <div class="col-4">
+              <div class="forecast-day">Thu 3rd</div>
+            </div>
+            <div class="col-4">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                id="icon"
+                width="40"
+              />
+            </div>
+            <div class="col-4">
+              <div class="forecast-temp">
+                <span class="forecast-max">49°F</span>
+                <span class="forecast-min">28°F</span>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-4">Fri 4TH</div>

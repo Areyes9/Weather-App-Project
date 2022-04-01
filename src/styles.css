@@ -3,7 +3,7 @@
   border: 1px solid grey;
   padding: 20px;
   margin: 20px auto;
-  max-width: 650px;
+  max-width: 550px;
   border-radius: 5px;
 }
 .city,
@@ -71,8 +71,8 @@ ul {
 }
 
 #icon {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 55px;
+  max-height: 55px;
   padding-top: 2px;
   position: relative;
 }
@@ -89,7 +89,7 @@ ul {
 .weather-extras {
   list-style: none;
   display: block;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
 }
 
@@ -104,6 +104,24 @@ button {
   background: #0a5ed7;
   color: white;
   border-radius: 5%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.forecast-day {
+  font-size: 20px;
+}
+
+.forecast-max {
+  font-size: 20px;
+  color: black;
+}
+
+.forecast-min {
+  opacity: 0.8;
+  font-size: 18px;
 }
 
 #github {
