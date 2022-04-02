@@ -57,7 +57,7 @@ function displayForecast(response) {
             </div>
             <div class="col-4">
               <img
-                src="icons/${response.data.daily.weather[0].icon}.png"
+                src="icons/${forecastDay.weather[0].icon}.png"
                 id="icon"
                 width="40"
               />
@@ -155,7 +155,6 @@ let fahrenheitLink = document.querySelector("#f-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 searchCity("Arlington");
-displayForecast();
 
 //Search Engine HM 5
 let apiKey = "147c7ccb0d8865155667a7334b1e39df";
