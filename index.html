@@ -19,10 +19,10 @@
       <div class="weather-app">
         <h1>
           <div class="row">
-            <div class="col-4 city">
-              <span id="city-search">Arlington</span>
+            <div class="col-5 city">
+              <span id="city-search"></span>
               <div>
-                <ul>
+                <ul id="below-city">
                   <li>
                     <span class="date" id="date">
                       Fri <br />
@@ -48,7 +48,7 @@
             </div>
             <div class="col-3">
               <ul class="weather-extras">
-                <li>Rain: <span id="Rain"></span>mm</li>
+                <li>Rain: <span id="rain"></span>mm</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span>mph</li>
               </ul>
@@ -72,7 +72,7 @@
               <input
                 type="submit"
                 value="Search"
-                class="btn btn-primary w-100"
+                class="btn btn-primary w-150"
               />
             </div>
             <div class="col-4">
@@ -102,30 +102,19 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-4">Fri 4TH</div>
-            <div class="col-4">🌤</div>
-            <div class="col-4">24°F</div>
+        </div>
+        <div class="row" id="cities">
+          <div class="col-3">
+            <button class="btn btn-success" id="LA">LA</button>
           </div>
-          <div class="row">
-            <div class="col-4">Sat 5TH</div>
-            <div class="col-4">☁️</div>
-            <div class="col-4">20°F</div>
+          <div class="col-3">
+            <button class="btn btn-success" id="NYC">NYC</button>
           </div>
-          <div class="row">
-            <div class="col-4">Sun 6TH</div>
-            <div class="col-4">🌧</div>
-            <div class="col-4">24°F</div>
+          <div class="col-3">
+            <button class="btn btn-success" id="London">London</button>
           </div>
-          <div class="row">
-            <div class="col-4">Mon 7TH</div>
-            <div class="col-4">☀️</div>
-            <div class="col-4">26°F</div>
-          </div>
-          <div class="row">
-            <div class="col-4">Tue 8TH</div>
-            <div class="col-4">☀️</div>
-            <div class="col-4">26°F</div>
+          <div class="col-3">
+            <button class="btn btn-success" id="Tokyo">Tokyo</button>
           </div>
         </div>
       </div>

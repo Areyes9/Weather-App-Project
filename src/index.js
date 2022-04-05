@@ -66,10 +66,10 @@ function displayForecast(response) {
               <div class="forecast-temp">
                 <span class="forecast-max">${Math.round(
                   forecastDay.temp.max
-                )}°F</span>
+                )}°</span>
                 <span class="forecast-min">${Math.round(
                   forecastDay.temp.min
-                )}°F</span>
+                )}°</span>
               </div>
             </div>
             `;
@@ -97,9 +97,9 @@ function showTemperature(response) {
   description.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-  //let precipitationElement = document.querySelector("#precipitation");
-  //precipitationElement.innerHTML = response.data.precipitation.value;
-  windElement.innerHTML = response.data.wind.speed;
+  let rainElement = document.querySelector("#rain");
+  rainElement.innerHTML = response.data.rain;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.main.humidity;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
@@ -138,9 +138,6 @@ function convertToFahrenheit(event) {
   fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  //let fahrenheitTemperature = (14 * 9) / 5 + 32;
-  //let temperatureElement = document.querySelector("#temperature");
-  //temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let fahrenheitTemperature = null;
@@ -154,11 +151,11 @@ celsiusLink.addEventListener("click", convertToCelsius);
 let fahrenheitLink = document.querySelector("#f-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-searchCity("Arlington");
+searchCity("Fairfax");
 
 //Search Engine HM 5
 let apiKey = "147c7ccb0d8865155667a7334b1e39df";
-let city = "Arlington";
+let city = "Fairfax";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 //Current Location Button
@@ -175,3 +172,19 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+//Other Cities Buttons
+function searchLa(position) {
+  let apiKey = "147c7ccb0d8865155667a7334b1e39df";
+  let city = "Los Angeles";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function getLaLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getLaPosition(searchLa);
+}
+
+let laButton = document.querySelector("#LA");
+laButton.addEventListener("click", getLaLocation);

@@ -1,10 +1,14 @@
+body {
+  background: white;
+}
+
 .weather-app {
   text-align: center;
-  border: 1px solid grey;
+  border: 2px solid lightblue;
   padding: 20px;
   margin: 20px auto;
-  max-width: 550px;
-  border-radius: 5px;
+  max-width: 565px;
+  border-radius: 8px;
 }
 .city,
 #temperature,
@@ -89,8 +93,12 @@ ul {
 .weather-extras {
   list-style: none;
   display: block;
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#below-city {
+  display: inline;
 }
 
 button {
@@ -110,18 +118,44 @@ button {
   text-align: center;
 }
 
+#forecast {
+  border: 2px solid lightblue;
+  border-radius: 8px;
+}
+
+.forecast-body {
+  border: 1px solid black;
+}
+
+#forecast-row {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
 .forecast-day {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .forecast-max {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
 }
 
 .forecast-min {
   opacity: 0.8;
   font-size: 18px;
+}
+
+#cities {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+#LA,
+#NYC,
+#London,
+#Tokyo {
+  width: 100px;
 }
 
 #github {
