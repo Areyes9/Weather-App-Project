@@ -1,14 +1,20 @@
 body {
-  background: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  );
 }
 
 .weather-app {
   text-align: center;
-  border: 2px solid lightblue;
+  background: #408dac;
+  border: 2px solid #408dac;
   padding: 20px;
   margin: 20px auto;
-  max-width: 550px;
-  border-radius: 8px;
+  max-width: 570px;
+  border-radius: 10px;
 }
 .city,
 #temperature,
@@ -16,6 +22,7 @@ body {
 #icon {
   text-align: center;
   line-height: normal;
+  color: white;
 }
 
 .city {
@@ -98,14 +105,30 @@ body {
 }
 
 button {
-  background: green;
+  background: #4997b4;
   color: white;
   margin: 0 auto;
   border-radius: 5%;
 }
 
+#search-form {
+  display: inline-block;
+}
+
+#search-button {
+  background: #005985;
+  border: #005985;
+  margin-left: -15px;
+  width: 80px;
+}
+
+#current-location-button {
+  margin-left: -2px;
+  width: 150px;
+}
+
 .search-button {
-  background: #0a5ed7;
+  background: #408dac;
   color: white;
   border-radius: 5%;
 }
@@ -115,7 +138,7 @@ button {
 }
 
 #forecast {
-  border: 2px solid lightblue;
+  border: 2px solid rgb(192, 189, 189);
   border-radius: 8px;
 }
 
@@ -152,6 +175,8 @@ button {
 #London,
 #Tokyo {
   width: 100px;
+  background: #005985;
+  border: #005985;
 }
 
 #github {
