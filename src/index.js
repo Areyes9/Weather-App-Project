@@ -54,8 +54,8 @@ function displayForecast(response) {
             <div class="col-4">
               <img
                 src="icons/${forecastDay.weather[0].icon}.png"
-                id="icon"
-                width="40"
+                id="icon-forecast"
+                
               />
             </div>
             <div class="col-4">
@@ -85,9 +85,8 @@ function getForecast(coordinates) {
 // City
 function showTemperature(response) {
   document.querySelector("#city-search").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML =
+    Math.round(response.data.main.temp) + `°`;
   console.log(response);
   let description = document.querySelector("#temp-description");
   description.innerHTML = response.data.weather[0].description;
@@ -117,33 +116,11 @@ function searchCity(city) {
 }
 
 //Farenheit to Celsius
-function convertToCelsius(event) {
-  event.preventDefault();
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
 
 let fahrenheitTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
-
-let fahrenheitLink = document.querySelector("#f-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 searchCity("Fairfax");
 
